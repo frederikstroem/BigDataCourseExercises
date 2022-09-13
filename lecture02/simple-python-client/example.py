@@ -7,12 +7,12 @@ first_line = ''
 
 # Reading a file, using a delimiter makes it return a list
 with client.read('/alice-in-wonderland.txt', encoding='utf-8', delimiter='\n') as reader:
-  for line in reader:
-    print(line)
-    first_line = line
-    # Only first line is interesting for now
-    break
-    
+    for line in reader:
+        print(line)
+        first_line = line
+        # Only first line is interesting for now
+        break
+
 # One line writing to a file
 # client.write('/write2.txt', first_line, encoding='utf-8', overwrite=True)
 
