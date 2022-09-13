@@ -12,5 +12,5 @@ wordcount = None
 with client.read('/alice-in-wonderland.txt', encoding='utf-8') as reader:
     wordcount = Counter(reader.read().split()).most_common(10)
 
-    
+
 # To-Do: Save the wordcount in a Parquet file and read it again!
