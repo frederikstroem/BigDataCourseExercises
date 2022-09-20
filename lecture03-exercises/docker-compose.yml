@@ -31,7 +31,7 @@ services:
       shared_network:
 
   kowl:
-    image: quay.io/cloudhut/kowl:master # We use the master tag as we want to use the latest features e.g. creation of topics.
+    image: docker.redpanda.com/vectorized/console:latest
     ports:
       - 8080:8080
     restart: unless-stopped
